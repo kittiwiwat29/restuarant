@@ -3,6 +3,10 @@ const app=express();
 //const mysql=require('mysql');
 const _=require('lodash');
 const bodyParser=require('body-parser');
+const cors=require('cors');
+const socketIO=require('socket.io');
+
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended:true
